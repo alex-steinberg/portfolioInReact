@@ -2,15 +2,18 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://www.steinrock.co.za/",
   "dependencies": {
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-router-dom": "^4.1.2",
     "react-scripts": "1.0.11"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && aws s3 sync build s3://aws-website-portfolioinreact-pnw26"
   }
 }
