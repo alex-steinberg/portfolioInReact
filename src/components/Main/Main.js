@@ -10,7 +10,7 @@ class Main extends Component {
         return(
             <main>
                 <About />
-                <Portfolio />
+                <Portfolio name={ this.props.name }/>
                 <Social />
                 <Clients />
                 <Contact />
